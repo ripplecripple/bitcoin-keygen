@@ -13,13 +13,13 @@ Example usage:
 
 ```
 # Generate wallet from a passphrase
-echo "Hello World" -n | bitcoin-keygen
-=> 5Joj3iFDaoGT1RNykhWDJbwBZ28vA9d55iY4631qmt7pEuygaTy
+echo -n "Hello World" | bitcoin-keygen
+=> 5K5CpQZtUvPqwk2UE1FAiWC1nPV1WYqMnEhMYy2WTiMz3J1u9nm
 
 # Generate wallet from a file with a passphrase in it
-echo "Hello World" -n > passphrase.txt
+echo -n "Hello World" > passphrase.txt
 cat passphrase.txt | bitcoin-keygen
-=> 5Joj3iFDaoGT1RNykhWDJbwBZ28vA9d55iY4631qmt7pEuygaTy
+=> 5K5CpQZtUvPqwk2UE1FAiWC1nPV1WYqMnEhMYy2WTiMz3J1u9nm
 
 # Generate wallet from an image on disk
 cat image1.jpg | bitcoin-keygen
